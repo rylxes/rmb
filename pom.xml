@@ -42,13 +42,6 @@
             <scope>runtime</scope>
         </dependency>
 
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.2.1.jre7</version>
-        </dependency>
-
         <!--Config Server for configurations-->
         <dependency>
             <groupId>io.pivotal.spring.cloud</groupId>

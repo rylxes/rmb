@@ -128,7 +128,7 @@ INSERT INTO oauth_client_details
    (client_id, client_secret, scope, authorized_grant_types,
    authorities, access_token_validity, refresh_token_validity)
 VALUES
-   ('testjwtclientid', 'XY7kmzoNzl100', 'read,write', 'password,refresh_token,client_credentials,authorization_code', 'ROLE_CLIENT,ROLE_TRUSTED_CLIENT', 900, 2592000);
+   ('rmbAPI', 'AH7VNzl10054', 'read,write', 'password,refresh_token,client_credentials,authorization_code', 'ROLE_CLIENT,ROLE_TRUSTED_CLIENT', 900, 2592000);
 INSERT INTO oauth_client_details
    (client_id, client_secret, scope, authorized_grant_types,
    authorities, access_token_validity, refresh_token_validity)
