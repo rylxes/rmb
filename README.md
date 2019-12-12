@@ -1,12 +1,15 @@
 
 <b>To test the application </b>
 
-First you will need the following basic pieces of information:</br>
-- client: testjwtclientid </br>
-- secret: XY7kmzoNzl100 </br>
-- Local DB
+
+- client: rmbAPI </br>
+- secret: AH7VNzl10054 </br>
+
 - Non-admin username and password: john.doe and jwtpass
 - Admin user: admin.admin and jwtpass
+
+
+
 - LDAP 
 - username and password: ben and benspassword
 - Example of resource accessible to all authenticated users: [http://localhost:8080/api/public/cities](http://localhost:8080/api/public/cities) 
