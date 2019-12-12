@@ -19,7 +19,8 @@
         <java.version>1.8</java.version>
         <spring-cloud-services.version>1.6.0.RELEASE</spring-cloud-services.version>
         <spring-cloud.version>Dalston.SR5</spring-cloud.version>
-        <swagger.version>2.7.0</swagger.version>
+        <swagger.version>2.9.2</swagger.version>
+        <springfox.version>2.9.2</springfox.version>
     </properties>
 
     <dependencies>
@@ -75,16 +76,16 @@
         </dependency>
 
         <!-- Swagger -->
+        <!-- Swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
+            <version>${springfox.version}</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.version}</version>
-            <scope>compile</scope>
+            <version>${springfox.version}</version>
         </dependency>
 
         <!-- Spring boot admin client -->
@@ -153,6 +154,11 @@
                 <version>${spring-cloud-services.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>20.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
