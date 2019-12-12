@@ -19,7 +19,7 @@
 
     For this specific application, to generate an access token for the non-admin user john.doe, run:
     ```
-    $ curl testjwtclientid:XY7kmzoNzl100@localhost:8080/oauth/token -d grant_type=password -d username=john.doe -d password=jwtpass
+    $ curl rmbAPI:AH7VNzl10054@localhost:8080/oauth/token -d grant_type=password -d username=john.doe -d password=jwtpass
     ```
     You'll receive a response similar to below
     
@@ -38,12 +38,12 @@
     Use the following command to validate an access token:
     
     ```
-    $ curl testjwtclientid:XY7kmzoNzl100@localhost:8080/oauth/check_token -d 'token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDM2MDI2NjksInVzZXJfbmFtZSI6ImFkbWluLmFkbWluIiwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiXSwianRpIjoiYzU0OTUwOWMtOGE2Ni00MmM4LTk4ZDQtZTIxOGMwMmQxYmFiIiwiY2xpZW50X2lkIjoidGVzdGp3dGNsaWVudGlkIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.hltbUwoJN9IQRLEHs_RnJS_MBaVMMzp0CjRB6paVGpY&undefined='    
+    $ curl rmbAPI:AH7VNzl10054@localhost:8080/oauth/check_token -d 'token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDM2MDI2NjksInVzZXJfbmFtZSI6ImFkbWluLmFkbWluIiwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiIsIkFETUlOX1VTRVIiXSwianRpIjoiYzU0OTUwOWMtOGE2Ni00MmM4LTk4ZDQtZTIxOGMwMmQxYmFiIiwiY2xpZW50X2lkIjoidGVzdGp3dGNsaWVudGlkIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.hltbUwoJN9IQRLEHs_RnJS_MBaVMMzp0CjRB6paVGpY&undefined='    
     ```
     Use the following command to refresh token:
     
     ```
-    $ curl -X POST testjwtclientid:XY7kmzoNzl100@localhost:8080/oauth/check_token -d 'grant_type=refresh_token&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqb2huLmRvZSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiJkYmZiYjI5Mi00NjMyLTQ5ODEtYThjMi0xZjYxNGQ5MjgyY2QiLCJleHAiOjE1NDYxODk3NjcsImF1dGhvcml0aWVzIjpbIlNUQU5EQVJEX1VTRVIiXSwianRpIjoiZjdhZDNiYWMtOTViYy00ZTZhLTkzYTQtODg0NzQ0Y2M5ODc1IiwiY2xpZW50X2lkIjoidGVzdGp3dGNsaWVudGlkIn0.VD9AJeK6555CYk5DaKj7ik81c81C6gPypNhTlEs6bsY&undefined='
+    $ curl -X POST rmbAPI:AH7VNzl10054@localhost:8080/oauth/check_token -d 'grant_type=refresh_token&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJqb2huLmRvZSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiJkYmZiYjI5Mi00NjMyLTQ5ODEtYThjMi0xZjYxNGQ5MjgyY2QiLCJleHAiOjE1NDYxODk3NjcsImF1dGhvcml0aWVzIjpbIlNUQU5EQVJEX1VTRVIiXSwianRpIjoiZjdhZDNiYWMtOTViYy00ZTZhLTkzYTQtODg0NzQ0Y2M5ODc1IiwiY2xpZW50X2lkIjoidGVzdGp3dGNsaWVudGlkIn0.VD9AJeK6555CYk5DaKj7ik81c81C6gPypNhTlEs6bsY&undefined='
     ```
     
     
